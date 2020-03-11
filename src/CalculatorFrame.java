@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CalculatorFrame extends JFrame{
+public class CalculatorFrame extends JFrame {
     private JPanel Calculator;
     private JButton calculateJButton;
     private JSpinner number1JSpinner;
@@ -11,7 +11,7 @@ public class CalculatorFrame extends JFrame{
     private JLabel resultJLabel;
     private JSpinner number2JSpinner;
 
-    public CalculatorFrame(String title){
+    public CalculatorFrame(String title) {
         super(title);
 
 
@@ -21,12 +21,12 @@ public class CalculatorFrame extends JFrame{
 
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         JFrame frame = new CalculatorFrame("Calculator");
         frame.setSize(300, 200);
         frame.setVisible(true);
     }
 
-
-
+    
 }
