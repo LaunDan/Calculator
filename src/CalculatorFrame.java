@@ -28,5 +28,5 @@ public class CalculatorFrame extends JFrame {
         frame.setVisible(true);
     }
 
-    
+
 }
