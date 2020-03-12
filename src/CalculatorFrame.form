@@ -48,6 +48,8 @@
             <item value="-"/>
             <item value="*"/>
             <item value="/"/>
+            <item value="^"/>
+            <item value="ˇ"/>
           </model>
         </properties>
       </component>
