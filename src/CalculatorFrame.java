@@ -23,8 +23,8 @@ public class CalculatorFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String operation = String.valueOf(operationJComboBox.getSelectedItem());
-                int number1 = (int)number1JSpinner.getValue();
-                int number2 = (int)number2JSpinner.getValue();
+                int number1 = (int) number1JSpinner.getValue();
+                int number2 = (int) number2JSpinner.getValue();
                 double result = 0;
 
                 if (operation.equals("+"))
@@ -35,6 +35,15 @@ public class CalculatorFrame extends JFrame {
                     result = number1 * number2;
                 else if (operation.equals("/"))
                     result = number1 / number2;
+                else if (operation.equals("^")) {
+                    result = number1;
+                    for (int i = 0; i < (number2 - 1); i++) {
+                        result = result * number1;
+                    }
+                }
+                else if (operation.equals("ˇ"))
+                    result = (float) Math.pow(number1, (1.0 / number2));
+
                 resultJLabel.setText(String.valueOf(result));
             }
         });
