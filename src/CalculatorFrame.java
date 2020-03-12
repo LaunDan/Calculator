@@ -28,7 +28,14 @@ public class CalculatorFrame extends JFrame {
                 double result = 0;
 
                 if (operation.equals("+"))
-                    result = 
+                    result = number1 + number2;
+                else if (operation.equals("-"))
+                    result = number1 - number2;
+                else if (operation.equals("*"))
+                    result = number1 * number2;
+                else if (operation.equals("/"))
+                    result = number1 / number2;
+                resultJLabel.setText(String.valueOf(result));
             }
         });
     }
