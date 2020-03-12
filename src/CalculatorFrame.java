@@ -19,6 +19,18 @@ public class CalculatorFrame extends JFrame {
         this.setContentPane(Calculator);
         this.pack();
 
+        calculateJButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String operation = String.valueOf(operationJComboBox.getSelectedItem());
+                int number1 = (int)number1JSpinner.getValue();
+                int number2 = (int)number2JSpinner.getValue();
+                double result = 0;
+
+                if (operation.equals("+"))
+                    result = 
+            }
+        });
     }
 
     public static void main(String[] args) throws ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
