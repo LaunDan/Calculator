@@ -53,6 +53,7 @@ public class CalculatorFrame extends JFrame {
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         JFrame frame = new CalculatorFrame("Calculator");
         frame.setSize(300, 200);
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 
